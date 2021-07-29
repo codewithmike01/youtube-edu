@@ -1,0 +1,585 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  --main-nav-background-color: rgba(33, 33, 33, 0.98);
+  --primary-white: #fff;
+  --main-body-background-color: #181818;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-white);
+}
+body {
+  background-color: var(--main-body-background-color);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+section,
+ul,
+li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainContainer {
+  margin-top: 40px;
+  padding: 0px 10px;
+}
+.navBar {
+  max-width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  background-color: var(--main-nav-background-color);
+}
+
+/* Ham Menu And Logo */
+.hamLogo {
+  display: flex;
+  align-items: center;
+  max-width: 23%;
+  position: relative;
+}
+.ham {
+  width: 28%;
+  color: var(--primary-white);
+}
+
+#logoImg {
+  width: 50%;
+  position: relative;
+  vertical-align: middle;
+}
+
+.logo {
+  position: relative;
+}
+.ng {
+  color: var(--primary-white);
+  font-size: 0.6rem;
+  margin-left: -10px;
+}
+
+/* Search and Microphone */
+.searchBArMic {
+  display: flex;
+  align-items: center;
+  width: 80%;
+
+  margin-left: -4%;
+}
+.searchBArMic form {
+  width: 100%;
+}
+
+.navBar input[type="search"] {
+  position: relative;
+  vertical-align: middle;
+  background-color: rgb(17, 17, 17);
+  border: none;
+  border-radius: 2px 0 2px 0;
+  color: var(--primary-white);
+  flex: 1;
+  height: 13px;
+
+  width: 100%;
+  padding: 0px 0px 5px 5px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 10px;
+}
+::-moz-placeholder {
+  font-size: 10px;
+}
+:-ms-input-placeholder {
+  font-size: 10px;
+}
+::placeholder {
+  font-size: 10px;
+}
+.searchBtn {
+  display: flex;
+  align-items: center;
+  background-color: rgba(163, 163, 163, 0.2);
+  border: none;
+  height: 12px;
+  margin-right: 2px;
+}
+
+.searchBtn .svgSize {
+  color: rgba(255, 255, 255, 0.3);
+}
+/* Icon Tabs */
+.iconTabs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  margin-left: 2%;
+}
+
+.profileImg {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.bell {
+  position: relative;
+}
+
+.bell:after {
+  content: "10+";
+  color: var(--primary-white);
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border-radius: 50%;
+  background-color: rgb(194, 24, 24);
+  padding: 2px 1px;
+  font-size: 5px;
+  height: 7px;
+}
+
+/*--> MAIN SECTION  */
+
+/* Video Section */
+.videoContianer {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  margin-bottom: 10px;
+}
+.videoContianer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.stats {
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iconStats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 48%;
+}
+.bothThumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.thumbs,
+.share,
+.playList {
+  display: flex;
+  align-items: center;
+}
+.thumbs svg,
+.share svg,
+.playList svg {
+  margin-right: 1px;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: #333;
+  /* for old broswer */
+  color: #333;
+}
+
+/* DESCRIPTION SECTION */
+.description {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.aurthorId {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.tagLetter {
+  border-radius: 50%;
+  background-color: rgb(69, 143, 8);
+  font-size: 0.53rem;
+  padding: 0.8em 1em;
+}
+.nameSubcribtion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.name {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.subscription {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.subscription p {
+  cursor: pointer;
+  text-align: center;
+  width: 70%;
+  padding: 0.4em;
+  background-color: rgb(216, 8, 8);
+  margin-right: 6px;
+}
+.descriptionNote {
+  margin-top: 10px;
+  width: 80%;
+}
+.descriptionNote p {
+  margin-bottom: 5px;
+}
+.btnShowMore {
+  font-size: 0.4rem;
+  color: rgb(168, 168, 168);
+}
+
+/* PLAY LIST DETAILS */
+.tagsPlayList {
+  margin-bottom: 10px;
+}
+.playListOpt {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.playListOpt ul {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.playListOpt li {
+  width: 100%;
+  display: flex;
+}
+.listTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3px;
+}
+.innerList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.paraDots {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.paraDots .svgSize {
+  position: relative;
+  vertical-align: top;
+}
+.smallInfo {
+  margin-top: -4px;
+}
+.btnSee {
+  cursor: pointer;
+  text-align: center;
+  padding: 4px 8px;
+  color: rgb(20, 147, 221);
+  font-size: 0.4rem;
+  border: 1px solid rgb(20, 147, 221);
+}
+
+/* COMMENT SECTION */
+.numComment {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  font-size: 0.5rem;
+  margin-bottom: 10px;
+}
+.sort {
+  width: 30%;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userComment {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.userProfilePicComment,
+.subProfilePicComment {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.commentInput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.commentInput input[type="text"] {
+  height: 20px;
+  font-size: 0.7rem;
+}
+#userInputComment {
+  display: block;
+  width: 100%;
+  font-size: 0.5rem;
+  border: none;
+  background-color: inherit;
+}
+.line {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: #333;
+  /* for older broswers */
+  color: #333;
+}
+
+/* SUBSCRIBERS COMMETS */
+
+.commentSubscriber {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.subDetails {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.subName {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subIcons {
+  display: flex;
+  align-items: center;
+}
+.subIcons h4,
+.subName h3,
+.subDetails p {
+  font-size: 0.5rem;
+}
+.subName,
+.subDetails p {
+  margin-bottom: 5px;
+}
+.subIcons svg {
+  margin-right: 5px;
+}
+.thumbContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.thumbContainer span {
+  font-size: 0.5rem;
+}
+/* TAGS PLAY LIST */
+
+.tags {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tags h3 {
+  font-size: 0.4rem;
+  padding: 3px 7px;
+  background-color: rgba(156, 156, 156, 0.35);
+  border-radius: 29px;
+  text-align: center;
+  margin-left: 2px;
+}
+.playList li {
+  list-style-type: none;
+}
+/* UTILITIES */
+.svgSize {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+}
+.svgGray {
+  color: rgb(141, 140, 140);
+}
+.microphone .svgSize,
+.iconTabs .svgSize {
+  color: var(--primary-white);
+}
+h1 {
+  font-size: 0.5rem;
+}
+h2 {
+  font-size: 0.4rem;
+}
+.smallGrayPara {
+  font-size: 0.3rem;
+  color: rgb(141, 140, 140);
+}
+.parasize {
+  font-size: 0.4rem;
+}
+
+/* GENERALS  */
+input:focus {
+  outline: none;
+}
+/* To remove the X in search */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* MEDIA QUERY */
+/* 330px and Above */
+@media (min-width: 330px) {
+  .bell:after {
+    left: 5px;
+    top: 3px;
+    padding: 0.3px 0.1px;
+    font-size: 5px;
+    height: 7px;
+  }
+  .subscription p {
+    width: 80%;
+    padding: 0.7em;
+  }
+}
+
+/* 403 and above */
+@media (min-width: 403px) {
+  .searchBArMic input[type="search"],
+  .searchBArMic button {
+    height: 25px;
+  }
+  .bell:after {
+    left: 5px;
+    top: 0px;
+    padding: 3px 1px;
+    font-size: 7px;
+    height: 7px;
+  }
+  .ham .svgSize {
+    font-size: 20px;
+  }
+
+  #logo {
+    margin-right: 10px;
+  }
+  .logo::after {
+    font-size: 8px;
+  }
+  .searchBArMic .svgSize,
+  .iconTabs .svgSize,
+  .iconTabs img {
+    width: 20px;
+    height: 20px;
+  }
+  ::placeholder {
+    font-size: 15px;
+  }
+  h1,
+  .title {
+    font-size: 0.9rem;
+  }
+  h3,
+  .subName h3 {
+    font-size: 0.8rem;
+  }
+  .smallGrayPara,
+  .subDetails p {
+    font-size: 0.7rem;
+  }
+  .thumbs .svgSize,
+  .share .svgSize,
+  .playList .svgSize {
+    margin-right: 10px;
+  }
+  .svgSize {
+    width: 15px;
+    height: 15px;
+  }
+  .tagLetter {
+    font-size: 0.7rem;
+  }
+  .name h2,
+  .parasize,
+  .btnShowMore,
+  .btnSee {
+    font-size: 0.7rem;
+  }
+  .userProfilePicComment,
+  .subProfilePicComment {
+    height: 50px;
+    width: 50px;
+  }
+  .thumbContainer span,
+  .subIcons h4 {
+    font-size: 0.7rem;
+  }
+  .tags h3 {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 1017px) {
+  .mainContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 1.5em;
+  }
+}

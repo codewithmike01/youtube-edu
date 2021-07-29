@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube-Edu</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="navBar">
+      <!--Ham Menu and Logo  -->
+      <section class="hamLogo">
+        <div class="ham">
+          <svg class="svgSize" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"
+            />
+          </svg>
+        </div>
+        <div class="logo">
+          <img
+            src="./images/YouTube-White-Full-Color-Logo.wine.svg"
+            alt="Logo"
+            srcset=""
+            id="logoImg"
+          />
+          <sup class="ng">NG</sup>
+        </div>
+      </section>
+      <section class="searchBArMic">
+        <form action="#">
+          <input type="search" name="search" placeholder="search" />
+        </form>
+        <button class="searchBtn">
+          <svg class="svgSize" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
+            />
+          </svg>
+        </button>
+        <div class="microphone">
+          <svg class="svgSize" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"
+            />
+          </svg>
+        </div>
+      </section>
+      <section class="iconTabs">
+        <!-- Video Icon -->
+        <svg class="svgSize" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M15 8V16H5V8H15M16 6H4C3.45 6 3 6.45 3 7V17C3 17.55 3.45 18 4 18H16C16.55 18 17 17.55 17 17V13.5L21 17.5V6.5L17 10.5V7C17 6.45 16.55 6 16 6M13 13H11V15H9V13H7V11H9V9H11V11H13V13Z"
+          />
+        </svg>
+        <!-- App Icon -->
+        <svg class="svgSize" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z"
+          />
+        </svg>
+        <!-- Notification Bell Icon -->
+        <div class="bell">
+          <svg class="svgSize" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21"
+            />
+          </svg>
+        </div>
+        <img
+          src="./images/profile.jpg"
+          alt="Profile Picture"
+          srcset=""
+          class="profileImg"
+        />
+      </section>
+    </nav>
+    <div class="mainContainer">
+      <!-- MAIN -->
+
+      <section class="sectionOne">
+        <div class="videoContianer">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/V74l_zS1x8E"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <h1 class="title">Contributing to Open Source Part I: The Best Way</h1>
+        <div class="stats">
+          <p class="smallGrayPara">63,332 views <sup>.</sup>Feb 27, 2014</p>
+          <div class="iconStats">
+            <!--  thumbs Up -->
+            <div class="thumbs">
+              <svg class="svgSize" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z"
+                  class="svgGray"
+                />
+              </svg>
+              <p class="smallGrayPara">465</p>
+            </div>
+            <!--  Thumbs Down -->
+            <div class="thumbs">
+              <svg class="svgSize" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z"
+                  class="svgGray"
+                />
+              </svg>
+              <p class="smallGrayPara">19</p>
+            </div>
+            <!-- Share -->
+            <div class="share">
+              <svg class="svgSize" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z"
+                  class="svgGray"
+                />
+              </svg>
+              <p class="smallGrayPara">SHARE</p>
+            </div>
+            <!-- Play List -->
+            <div class="playList">
+              <svg class="svgSize" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M2,16H10V14H2M18,14V10H16V14H12V16H16V20H18V16H22V14M14,6H2V8H14M14,10H2V12H14V10Z"
+                  class="svgGray"
+                />
+              </svg>
+              <p class="smallGrayPara">SAVE</p>
+            </div>
+            <!-- Horinzontal Dots -->
+            <svg class="svgSize" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z"
+                class="svgGray"
+              />
+            </svg>
+          </div>
+        </div>
+        <hr />
+        <!-- Description -->
+        <div class="description">
+          <div class="aurthorId">
+            <div class="Letter">
+              <h4 class="tagLetter">T</h4>
+            </div>
+            <div class="name">
+              <h2>The Odin Project</h2>
+              <p class="smallGrayPara">1.05K subscribers</p>
+              <div class="descriptionNote">
+                <p class="parasize">
+                  How do you contribute to open source? In this video, I'll
+                  describe the easiest way to make a simple contribution to an
+                  open source project -- without using the command line,
+                </p>
+                <div class="btnShowMore">SHOW MORE</div>
+              </div>
+            </div>
+          </div>
+          <div class="subscription">
+            <p class="parasize">SUBSCRIBE</p>
+            <svg class="svgSize" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21"
+                class="svgGray"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <hr />
+      </section>
+      <!-- SECTION TWO -->
+      <section class="tagsPlayList">
+        <div class="tags">
+          <h3>All</h3>
+          <h3>Git</h3>
+          <h3>Website</h3>
+          <h3>Computer Program</h3>
+        </div>
+        <div class="playListOpt">
+          <ul>
+            <li>
+              <iframe
+                width="110"
+                height="70"
+                src="https://www.youtube.com/embed/XQgXKtPSzUI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="listTitle">
+                <div class="innerList">
+                  <div class="paraDots">
+                    <p class="parasize">
+                      Intro to Scriping with Python and Beautiful Soup
+                    </p>
+                    <div>
+                      <svg class="svgSize" viewBox="0 0 24 24">
+                        <path
+                          fill="currentColor"
+                          d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z"
+                          class="svgGray"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="smallInfo">
+                    <p class="smallGrayPara">Data Science Dojo</p>
+                    <p class="smallGrayPara">
+                      1.2M views <sup class="svgGray">.</sup>4 years ago
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <iframe
+                width="110"
+                height="70"
+                src="https://www.youtube.com/embed/dHAbmoFHqgA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="listTitle">
+                <div class="innerList">
+                  <div class="paraDots">
+                    <p class="parasize">
+                      How To Become A Master In The Art of Public Speaking (Part
+                      1 of 2)
+                    </p>
+                    <div>
+                      <svg class="svgSize" viewBox="0 0 24 24">
+                        <path
+                          fill="currentColor"
+                          d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z"
+                          class="svgGray"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="smallInfo">
+                    <p class="smallGrayPara">Mindvally Talks</p>
+                    <p class="smallGrayPara">
+                      1.6M views <sup class="svgGray">.</sup>2 years ago
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <iframe
+                width="110"
+                height="70"
+                src="https://www.youtube.com/embed/uT_GcOGEFsk"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="listTitle">
+                <div class="innerList">
+                  <div class="paraDots">
+                    <p class="parasize">
+                      Unleash Your Super Brain to Learn Faster
+                    </p>
+                    <div>
+                      <svg class="svgSize" viewBox="0 0 24 24">
+                        <path
+                          fill="currentColor"
+                          d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z"
+                          class="svgGray"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="smallInfo">
+                    <p class="smallGrayPara">Mindvally</p>
+                    <p class="smallGrayPara">
+                      9.4M views <sup class="svgGray">.</sup>3 years ago
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <iframe
+                width="110"
+                height="70"
+                src="https://www.youtube.com/embed/R8rmfD9Y5-c"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="listTitle">
+                <div class="innerList">
+                  <div class="paraDots">
+                    <p class="parasize">8 Must Know JavaScript Array</p>
+                    <div>
+                      <svg class="svgSize" viewBox="0 0 24 24">
+                        <path
+                          fill="currentColor"
+                          d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z"
+                          class="svgGray"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="smallInfo">
+                    <p class="smallGrayPara">Web Dev Simplified</p>
+                    <p class="smallGrayPara">
+                      550K views <sup class="svgGray">.</sup>2 years ago
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <iframe
+                width="110"
+                height="70"
+                src="https://www.youtube.com/embed/nJI1uZyFH4k"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div class="listTitle">
+                <div class="innerList">
+                  <div class="paraDots">
+                    <p class="parasize">
+                      Elon Musk Doesn't Care About Your College Degree | Real
+                      Developers
+                    </p>
+                    <div>
+                      <svg class="svgSize" viewBox="0 0 24 24">
+                        <path
+                          fill="currentColor"
+                          d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z"
+                          class="svgGray"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="smallInfo">
+                    <p class="smallGrayPara">Clever Programmers</p>
+                    <p class="smallGrayPara">
+                      4.4K views <sup class="svgGray">.</sup>4 years ago
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="btnSee">SHOW MORE</div>
+      </section>
+      <!-- COMMENT SECTION -->
+      <section class="Comments">
+        <div class="numComment">
+          <h3>50 Comments</h3>
+          <div class="sort">
+            <svg class="svgSize" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M3,13H15V11H3M3,6V8H21V6M3,18H9V16H3V18Z"
+                class="svgGray"
+              />
+            </svg>
+            <h3 class="svgGray">SORT</h3>
+          </div>
+        </div>
+        <div class="userComment">
+          <img
+            src="./images/profile.jpg"
+            alt="user profile picture"
+            srcset=""
+            class="userProfilePicComment"
+          />
+          <div class="commentInput">
+            <input
+              type="text"
+              name="comment"
+              id="userInputComment"
+              placeholder="Add a Public Comment..."
+            />
+            <div class="line"></div>
+          </div>
+        </div>
+        <!-- SUBSCRIBERS COMMENTS -->
+        <div class="subComments">
+          <div class="commentSubscriber">
+            <img
+              src="./images/sub1.jpg"
+              alt=""
+              srcset=""
+              class="subProfilePicComment"
+            />
+            <div class="subDetails">
+              <div class="subName">
+                <h3>
+                  Wing N. <span class="svgGray">3 years ago (edited)</span>
+                </h3>
+                <svg class="svgSize" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z"
+                    class="svgGray"
+                  />
+                </svg>
+              </div>
+              <p>"use your powers for good" haha thank you for the video</p>
+              <div class="subIcons">
+                <div class="thumbContainer">
+                  <svg class="svgSize" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z"
+                      class="svgGray"
+                    />
+                  </svg>
+                  <span class="svgGray">20</span>
+                </div>
+
+                <div class="thumbContainer">
+                  <svg class="svgSize" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z"
+                      class="svgGray"
+                    />
+                  </svg>
+                  <span class="svgGray"> 1 </span>
+                </div>
+
+                <h4 class="svgGray">REPLY</h4>
+              </div>
+            </div>
+          </div>
+          <div class="commentSubscriber">
+            <img
+              src="./images/sub2.jpg"
+              alt=""
+              srcset=""
+              class="subProfilePicComment"
+            />
+            <div class="subDetails">
+              <div class="subName">
+                <h3>
+                  Chritine Fredricksen.
+                  <span class="svgGray">10 months ago (edited)</span>
+                </h3>
+                <svg class="svgSize" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z"
+                    class="svgGray"
+                  />
+                </svg>
+              </div>
+              <p>
+                Thanks so much! This video was really helpful and to the point
+              </p>
+              <div class="subIcons">
+                <div class="thumbContainer">
+                  <svg class="svgSize" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z"
+                      class="svgGray"
+                    />
+                  </svg>
+                  <span class="svgGray"></span>
+                </div>
+
+                <div class="thumbContainer">
+                  <svg class="svgSize" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z"
+                      class="svgGray"
+                    />
+                  </svg>
+                  <span class="svgGray"> </span>
+                </div>
+
+                <h4 class="svgGray">REPLY</h4>
+              </div>
+            </div>
+          </div>
+          <div class="commentSubscriber">
+            <img
+              src="./images/sub3.jpg"
+              alt=""
+              srcset=""
+              class="subProfilePicComment"
+            />
+            <div class="subDetails">
+              <div class="subName">
+                <h3>
+                  andrewscheuermann05
+                  <span class="svgGray">6 years ago </span>
+                </h3>
+                <svg class="svgSize" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z"
+                    class="svgGray"
+                  />
+                </svg>
+              </div>
+              <p>FYI: the edit button has changed to disgonal pencil</p>
+              <div class="subIcons">
+                <div class="thumbContainer">
+                  <svg class="svgSize" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M23,10C23,8.89 22.1,8 21,8H14.68L15.64,3.43C15.66,3.33 15.67,3.22 15.67,3.11C15.67,2.7 15.5,2.32 15.23,2.05L14.17,1L7.59,7.58C7.22,7.95 7,8.45 7,9V19A2,2 0 0,0 9,21H18C18.83,21 19.54,20.5 19.84,19.78L22.86,12.73C22.95,12.5 23,12.26 23,12V10M1,21H5V9H1V21Z"
+                      class="svgGray"
+                    />
+                  </svg>
+                  <span class="svgGray">1</span>
+                </div>
+
+                <div class="thumbContainer">
+                  <svg class="svgSize" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M19,15H23V3H19M15,3H6C5.17,3 4.46,3.5 4.16,4.22L1.14,11.27C1.05,11.5 1,11.74 1,12V14A2,2 0 0,0 3,16H9.31L8.36,20.57C8.34,20.67 8.33,20.77 8.33,20.88C8.33,21.3 8.5,21.67 8.77,21.94L9.83,23L16.41,16.41C16.78,16.05 17,15.55 17,15V5C17,3.89 16.1,3 15,3Z"
+                      class="svgGray"
+                    />
+                  </svg>
+                  <span class="svgGray"> </span>
+                </div>
+
+                <h4 class="svgGray">REPLY</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+<!-- <h2>
+  How do you contribute to open source? In this video, I'll describe the easiest
+  way to make a simple contribution to an open source project -- without using
+  the command line,
+</h2> -->
