@@ -50,7 +50,7 @@ li {
   background-color: var(--main-nav-background-color);
 }
 
-/* Ham Menu And Logo */
+/* Ham Menu And Logo section */
 .hamLogo {
   display: flex;
   align-items: center;
