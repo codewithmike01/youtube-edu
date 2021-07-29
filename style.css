@@ -73,7 +73,7 @@ li {
 }
 .ng {
   color: var(--primary-white);
-  font-size: 0.6rem;
+  font-size: 0.3rem;
   margin-left: -10px;
 }
 
@@ -520,9 +520,7 @@ input[type="search"]::-webkit-search-results-decoration {
   #logo {
     margin-right: 10px;
   }
-  .logo::after {
-    font-size: 8px;
-  }
+
   .searchBArMic .svgSize,
   .iconTabs .svgSize,
   .iconTabs img {
