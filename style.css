@@ -486,11 +486,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* MEDIA QUERY */
 /* 330px and Above */
-@media (min-width: 330px) {
+@media (min-width: 310px) {
   .bell:after {
     left: 5px;
     top: 3px;
-    padding: 0.3px 0.1px;
+    padding: 0.5px 0.1px;
     font-size: 5px;
     height: 7px;
   }
